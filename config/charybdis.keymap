@@ -285,6 +285,13 @@
             key-positions = <40 39>;
             layers = <0 1 2 3 4 5 6 7 8>;
         };
+
+        quick_layer_sl_2 {
+            timeout-ms = <40>;
+            bindings = <&sl 25>;
+            key-positions = <39 38>;
+            layers = <0 1 2 3 4 5 6 7 8>;
+        };
     };
 };
 
@@ -672,10 +679,10 @@
 
         Navig_Layer {
             bindings = <
-&kp F12  &mt SEMI F1               &mt LEFT_BRACKET F2  &mt QUESTION F3       &mt RIGHT_BRACKET F4  &mt EXCL F5             &mt EQUAL F6       &mt LEFT_PARENTHESIS F6  &mt UNDER F8                 &mt RIGHT_PARENTHESIS F9  &mt COLON F10             &kp F11
-&trans   &kp ESC                   &kp HOME             &kp UP_ARROW          &mt LEFT_GUI END      &mt (C_VOL_UP) LC(X)    &kp PAGE_UP        &mt RIGHT_GUI NUMBER_7   &kp NUMBER_8                 &kp NUMBER_9              &kp RC(RA(TAB))           &trans
-&trans   &mt LEFT_SHIFT ENTER      &kp LEFT_ARROW       &mt LEFT_CONTROL TAB  &kp RIGHT_ARROW       &mt (C_VOL_DN) LC(C)    &kp PAGE_DOWN      &kp NUMBER_4             &mmt RIGHT_CONTROL NUMBER_5  &kp NUMBER_6              &mmt (RIGHT_SHIFT) LG(T)  &trans
-&trans   &mt (LEFT_ALT) RC(SLASH)  &kp BACKSPACE        &kp DOWN_ARROW        &kp DELETE            &kp LC(V)               &kp K_APPLICATION  &kp NUMBER_1             &mt COMMA NUMBER_2           &mt DOT NUMBER_3          &kp LEFT_ALT              &trans
+&mt GRAVE F12  &mt SEMI F1               &mt LEFT_BRACKET F2  &mt QUESTION F3       &mt RIGHT_BRACKET F4  &mt EXCL F5             &mt EQUAL F6       &mt LEFT_PARENTHESIS F6  &mt UNDER F8                 &mt RIGHT_PARENTHESIS F9  &mt COLON F10             &mt sign_tilda F11
+&trans         &kp ESC                   &kp HOME             &kp UP_ARROW          &mt LEFT_GUI END      &mt (C_VOL_UP) LC(X)    &kp PAGE_UP        &mt RIGHT_GUI NUMBER_7   &kp NUMBER_8                 &kp NUMBER_9              &kp RC(RA(TAB))           &trans
+&trans         &mt LEFT_SHIFT ENTER      &kp LEFT_ARROW       &mt LEFT_CONTROL TAB  &kp RIGHT_ARROW       &mt (C_VOL_DN) LC(C)    &kp PAGE_DOWN      &kp NUMBER_4             &mmt RIGHT_CONTROL NUMBER_5  &kp NUMBER_6              &mmt (RIGHT_SHIFT) LG(T)  &trans
+&trans         &mt (LEFT_ALT) RC(SLASH)  &kp BACKSPACE        &kp DOWN_ARROW        &kp DELETE            &kp LC(V)               &kp K_APPLICATION  &kp NUMBER_1             &mt COMMA NUMBER_2           &mt DOT NUMBER_3          &kp LEFT_ALT              &trans
                                                         &trans                &trans                &trans                  &citrix_leave      &kp NUMBER_0
                                                                               &trans                &trans                  &kp RC(E)
             >;
@@ -709,7 +716,7 @@
 &trans  &kp LS(Q)   &kp LS(W)   &kp LS(E)           &kp LS(R)   &kp LS(T)     &kp LS(Y)       &kp LS(U)   &kp LS(I)      &kp LS(O)    &kp LS(P)   &trans
 &trans  &kp LS(A)   &kp LS(S)   &mmt (LCTRL) LS(D)  &kp LS(F)   &kp LS(G)     &kp LS(H)       &kp LS(J)   &kp LS(K)      &kp LS(L)    &trans      &trans
 &trans  &kp LS(Z)   &kp LS(X)   &kp LS(C)           &kp LS(V)   &kp LS(B)     &kp LS(N)       &kp LS(M)   &kp LS(COMMA)  &kp LS(DOT)  &trans      &trans
-                                &none               &czesc      &trans        &sign_less_eq   &sign_eq
+                                &mkp LCLK           &czesc      &trans        &sign_less_eq   &sign_eq
                                                     &smile      &trans        &sign_great_eq
             >;
         };
