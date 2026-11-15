@@ -1,8 +1,6 @@
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/rgb.h>
 
 #define SIGN_COMBOS_LAYERS 0 1 2 3 4 5 6 7 8 9
 #define SIGN_COMBOS_DELAY 40
@@ -60,7 +58,6 @@
         };
     };
 };
-
 
 / {
     combos {
@@ -534,21 +531,21 @@
 
         Base_context_0_Layer {
             bindings = <
-&kp GRAVE       &kp SEMI         &kp LEFT_BRACKET  &kp QUESTION         &kp RIGHT_BRACKET      &kp EXCL                &kp EQUAL           &kp LEFT_PARENTHESIS  &kp UNDER             &kp RIGHT_PARENTHESIS  &kp COLON         &kp TILDE
-&kp TAB         &kp Q            &kp W             &kp E                &mmt LEFT_GUI R        &kp T                   &kp Y               &mmt RIGHT_GUI U      &kp I                 &kp O                  &kp P             &kp BSLH
-&kp CAPSLOCK    &lt_delay 12 A   &lt 4 S           &mmt LEFT_CONTROL D  &lt_delay 13 F         &kp G                   &kp H               &kp J                 &mmt RIGHT_CONTROL K  &kp L                  &skm RIGHT_SHIFT  &kp SQT
-&kp LEFT_SHIFT  &mmt LEFT_ALT Z  &kp X             &kp C                &kp V                  &lt 2 B                 &kp N               &kp M                 &kp COMMA             &kp DOT                &kp LEFT_ALT      &kp RIGHT_SHIFT
-                                                   &kp LEFT_CONTROL     &lt (9) RC(RA(SPACE))  &lt (23) RC(RA(TAB))    &lt (11) LS(LG(S))  &sl 14
-                                                                        &kp LS(ENTER)          &lt 10 C_MUTE           &kp CAPSLOCK
+&kp GRAVE          &kp SEMI         &kp LEFT_BRACKET  &kp QUESTION         &kp RIGHT_BRACKET      &kp EXCL                &kp EQUAL           &kp LEFT_PARENTHESIS  &kp UNDER             &kp RIGHT_PARENTHESIS  &kp COLON         &kp TILDE
+&kp TAB            &kp Q            &kp W             &kp E                &mmt LEFT_GUI R        &kp T                   &kp Y               &mmt RIGHT_GUI U      &kp I                 &kp O                  &kp P             &kp BSLH
+&bookmark          &lt_delay 12 A   &lt 4 S           &mmt LEFT_CONTROL D  &lt_delay 13 F         &kp G                   &kp H               &kp J                 &mmt RIGHT_CONTROL K  &kp L                  &skm RIGHT_SHIFT  &kp SQT
+&bookmark_chapter  &mmt LEFT_ALT Z  &kp X             &kp C                &kp V                  &lt 2 B                 &kp N               &kp M                 &kp COMMA             &kp DOT                &kp LEFT_ALT      &kp RIGHT_SHIFT
+                                                      &kp LEFT_CONTROL     &lt (9) RC(RA(SPACE))  &lt (23) RC(RA(TAB))    &lt (11) LS(LG(S))  &sl 14
+                                                                           &kp LS(ENTER)          &lt 10 C_MUTE           &kp CAPSLOCK
             >;
         };
 
         Base_context_1_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &sl 15
                                 &trans  &trans    &trans
             >;
@@ -556,10 +553,10 @@
 
         Base_context_2_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &sl 16
                                 &trans  &trans    &trans
             >;
@@ -567,10 +564,10 @@
 
         Base_context_3_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &sl 17
                                 &trans  &trans    &trans
             >;
@@ -578,10 +575,10 @@
 
         Base_context_4_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &sl 18
                                 &trans  &trans    &trans
             >;
@@ -589,10 +586,10 @@
 
         Base_context_5_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &sl 19
                                 &trans  &trans    &trans
             >;
@@ -600,10 +597,10 @@
 
         Base_context_6_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &sl 20
                                 &trans  &trans    &trans
             >;
@@ -611,10 +608,10 @@
 
         Base_context_7_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &sl 21
                                 &trans  &trans    &trans
             >;
@@ -622,10 +619,10 @@
 
         Base_context_8_Layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &sl 22
                                 &trans  &trans    &trans
             >;
@@ -633,10 +630,10 @@
 
         Navig_Layer {
             bindings = <
-&kp F12  &mt COLON F1              &mt LEFT_BRACKET F2  &mt QUESTION F3       &mt RIGHT_BRACKET F4  &mt EXCL F5             &mt EQUAL F6       &mt LEFT_PARENTHESIS F6  &mt UNDER F8                 &mt RIGHT_BRACKET F9  &mt COLON F10             &kp F11
-&trans   &kp ESC                   &kp HOME             &kp UP_ARROW          &mt LEFT_GUI END      &mt (C_VOL_UP) LC(X)    &kp PAGE_UP        &mt RIGHT_GUI NUMBER_7   &kp NUMBER_8                 &kp NUMBER_9          &kp RC(RA(TAB))           &trans
-&trans   &mt LEFT_SHIFT ENTER      &kp LEFT_ARROW       &mt LEFT_CONTROL TAB  &kp RIGHT_ARROW       &mt (C_VOL_DN) LC(C)    &kp PAGE_DOWN      &kp NUMBER_4             &mmt RIGHT_CONTROL NUMBER_5  &kp NUMBER_6          &mmt (RIGHT_SHIFT) LG(T)  &trans
-&trans   &mt (LEFT_ALT) RC(SLASH)  &kp BACKSPACE        &kp DOWN_ARROW        &kp DELETE            &kp LC(V)               &kp K_APPLICATION  &kp NUMBER_1             &mt COMMA NUMBER_2           &mt DOT NUMBER_3      &kp LEFT_ALT              &trans
+&kp F12  &mt SEMI F1               &mt LEFT_BRACKET F2  &mt QUESTION F3       &mt RIGHT_BRACKET F4  &mt EXCL F5             &mt EQUAL F6       &mt LEFT_PARENTHESIS F6  &mt UNDER F8                 &mt RIGHT_PARENTHESIS F9  &mt COLON F10             &kp F11
+&trans   &kp ESC                   &kp HOME             &kp UP_ARROW          &mt LEFT_GUI END      &mt (C_VOL_UP) LC(X)    &kp PAGE_UP        &mt RIGHT_GUI NUMBER_7   &kp NUMBER_8                 &kp NUMBER_9              &kp RC(RA(TAB))           &trans
+&trans   &mt LEFT_SHIFT ENTER      &kp LEFT_ARROW       &mt LEFT_CONTROL TAB  &kp RIGHT_ARROW       &mt (C_VOL_DN) LC(C)    &kp PAGE_DOWN      &kp NUMBER_4             &mmt RIGHT_CONTROL NUMBER_5  &kp NUMBER_6              &mmt (RIGHT_SHIFT) LG(T)  &trans
+&trans   &mt (LEFT_ALT) RC(SLASH)  &kp BACKSPACE        &kp DOWN_ARROW        &kp DELETE            &kp LC(V)               &kp K_APPLICATION  &kp NUMBER_1             &mt COMMA NUMBER_2           &mt DOT NUMBER_3          &kp LEFT_ALT              &trans
                                                         &trans                &trans                &trans                  &citrix_leave      &kp NUMBER_0
                                                                               &trans                &trans                  &kp RC(E)
             >;
@@ -655,23 +652,23 @@
 
         Mouse_Layer {
             bindings = <
-&trans  &trans  &trans  &trans            &trans     &trans               &trans  &trans                              &trans                              &trans                             &trans  &trans
-&trans  &none   &none   &none             &none      &none                &trans  &trans                              &mmv MOVE_Y(-KEY_CURSOR_LOW_SPEED)  &trans                             &trans  &trans
-&trans  &none   &none   &kp LEFT_CONTROL  &mo 13     &none                &trans  &mmv MOVE_X(-KEY_CURSOR_LOW_SPEED)  &kp LEFT_CONTROL                    &mmv MOVE_X(KEY_CURSOR_LOW_SPEED)  &trans  &trans
-&trans  &none   &none   &kp LEFT_CONTROL  &none      &none                &trans  &none                               &mmv MOVE_Y(KEY_CURSOR_LOW_SPEED)   &none                              &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &trans  &trans  &trans            &trans  &trans    &trans  &trans                              &trans                              &trans                             &trans  &trans
+&trans  &none   &none   &none             &none   &none     &trans  &trans                              &mmv MOVE_Y(-KEY_CURSOR_LOW_SPEED)  &trans                             &trans  &trans
+&trans  &none   &none   &kp LEFT_CONTROL  &mo 13  &none     &trans  &mmv MOVE_X(-KEY_CURSOR_LOW_SPEED)  &kp LEFT_CONTROL                    &mmv MOVE_X(KEY_CURSOR_LOW_SPEED)  &trans  &trans
+&trans  &none   &none   &kp LEFT_CONTROL  &none   &none     &trans  &none                               &mmv MOVE_Y(KEY_CURSOR_LOW_SPEED)   &none                              &trans  &trans
+                        &trans            &trans  &trans    &trans  &trans
+                                          &trans  &trans    &trans
             >;
         };
 
         Capital_Layer {
             bindings = <
-&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)          &kp LS(N4)  &kp LS(N5)            &kp LS(N6)     &kp LS(N7)      &kp LS(N8)     &kp LS(N9)   &kp LS(N0)  &trans
-&trans  &kp LS(Q)   &kp LS(W)   &kp LS(E)           &kp LS(R)   &kp LS(T)             &kp LS(Y)      &kp LS(U)       &kp LS(I)      &kp LS(O)    &kp LS(P)   &trans
-&trans  &kp LS(A)   &kp LS(S)   &mmt (LCTRL) LS(D)  &kp LS(F)   &kp LS(G)             &kp LS(H)      &kp LS(J)       &kp LS(K)      &kp LS(L)    &trans      &trans
-&trans  &kp LS(Z)   &kp LS(X)   &kp LS(C)           &kp LS(V)   &kp LS(B)             &kp LS(N)      &kp LS(M)       &kp LS(COMMA)  &kp LS(DOT)  &trans      &trans
-                                                    &czesc      &trans     &trans     &trans         &sign_eq
-                                                                &smile     &trans     &trans
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)          &kp LS(N4)  &kp LS(N5)    &kp LS(N6)      &kp LS(N7)  &kp LS(N8)     &kp LS(N9)   &kp LS(N0)  &trans
+&trans  &kp LS(Q)   &kp LS(W)   &kp LS(E)           &kp LS(R)   &kp LS(T)     &kp LS(Y)       &kp LS(U)   &kp LS(I)      &kp LS(O)    &kp LS(P)   &trans
+&trans  &kp LS(A)   &kp LS(S)   &mmt (LCTRL) LS(D)  &kp LS(F)   &kp LS(G)     &kp LS(H)       &kp LS(J)   &kp LS(K)      &kp LS(L)    &trans      &trans
+&trans  &kp LS(Z)   &kp LS(X)   &kp LS(C)           &kp LS(V)   &kp LS(B)     &kp LS(N)       &kp LS(M)   &kp LS(COMMA)  &kp LS(DOT)  &trans      &trans
+                                &czesc              &trans      &trans        &sign_less_eq   &sign_eq
+                                                    &smile      &trans        &sign_great_eq
             >;
         };
 
@@ -688,122 +685,122 @@
 
         Context_0_Layer {
             bindings = <
-&trans  &to 0      &to 1      &to 2               &to 3   &to 4             &to 5                   &to 6                     &to 7               &to 8                      &none             &trans
-&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans            &jupyter_cell_delete    &trans                    &jupyter_cell_up    &trans                     &trans            &trans
-&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans            &none                   &kp RC(LS(LEFT_BRACKET))  &kp LC(ENTER)       &kp RC(RS(RIGHT_BRACKET))  &kp LS(ENTER)     &trans
-&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans            &jupyter_cell_markdown  &jupyter_new_cell_above   &jupyter_cell_down  &jupyter_new_cell_below    &jupyter_restart  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &to 0      &to 1      &to 2               &to 3   &to 4     &to 5                   &to 6                     &to 7               &to 8                      &none             &trans
+&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans    &jupyter_cell_delete    &trans                    &jupyter_cell_up    &trans                     &trans            &trans
+&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans    &none                   &kp RC(LS(LEFT_BRACKET))  &kp LC(ENTER)       &kp RC(RS(RIGHT_BRACKET))  &kp LS(ENTER)     &trans
+&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans    &jupyter_cell_markdown  &jupyter_new_cell_above   &jupyter_cell_down  &jupyter_new_cell_below    &jupyter_restart  &trans
+                              &trans              &trans  &trans    &trans                  &trans
+                                                  &trans  &trans    &trans
             >;
         };
 
         Context_1_Layer {
             bindings = <
-&trans  &to 0      &to 1      &to 2               &to 3   &to 4             &to 5   &to 6   &to 7   &to 8   &none   &trans
-&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &to 0      &to 1      &to 2               &to 3   &to 4     &to 5   &to 6   &to 7   &to 8   &none   &trans
+&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans              &trans  &trans    &trans  &trans
+                                                  &trans  &trans    &trans
             >;
         };
 
         Context_2_Layer {
             bindings = <
-&trans  &to 0      &to 1      &to 2               &to 3   &to 4             &to 5   &to 6   &to 7   &to 8   &none   &trans
-&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &to 0      &to 1      &to 2               &to 3   &to 4     &to 5   &to 6   &to 7   &to 8   &none   &trans
+&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans              &trans  &trans    &trans  &trans
+                                                  &trans  &trans    &trans
             >;
         };
 
         Context_3_Layer {
             bindings = <
-&trans  &to 0      &to 1      &to 2               &to 3   &to 4             &to 5   &to 6   &to 7   &to 8   &none   &trans
-&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &to 0      &to 1      &to 2               &to 3   &to 4     &to 5   &to 6   &to 7   &to 8   &none   &trans
+&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans              &trans  &trans    &trans  &trans
+                                                  &trans  &trans    &trans
             >;
         };
 
         Context_4_Layer {
             bindings = <
-&trans  &to 0      &to 1      &to 2               &to 3   &to 4             &to 5   &to 6   &to 7   &to 8   &none   &trans
-&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &to 0      &to 1      &to 2               &to 3   &to 4     &to 5   &to 6   &to 7   &to 8   &none   &trans
+&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans              &trans  &trans    &trans  &trans
+                                                  &trans  &trans    &trans
             >;
         };
 
         Context_5_Layer {
             bindings = <
-&trans  &to 0      &to 1      &to 2               &to 3   &to 4             &to 5   &to 6   &to 7   &to 8   &none   &trans
-&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &to 0      &to 1      &to 2               &to 3   &to 4     &to 5   &to 6   &to 7   &to 8   &none   &trans
+&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans              &trans  &trans    &trans  &trans
+                                                  &trans  &trans    &trans
             >;
         };
 
         Context_6_Layer {
             bindings = <
-&trans  &to 0      &to 1      &to 2               &to 3   &to 4             &to 5   &to 6   &to 7   &to 8   &none   &trans
-&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &to 0      &to 1      &to 2               &to 3   &to 4     &to 5   &to 6   &to 7   &to 8   &none   &trans
+&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans              &trans  &trans    &trans  &trans
+                                                  &trans  &trans    &trans
             >;
         };
 
         Context_7_Layer {
             bindings = <
-&trans  &to 0      &to 1      &to 2               &to 3   &to 4             &to 5   &to 6   &to 7   &to 8   &none   &trans
-&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &to 0      &to 1      &to 2               &to 3   &to 4     &to 5   &to 6   &to 7   &to 8   &none   &trans
+&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans              &trans  &trans    &trans  &trans
+                                                  &trans  &trans    &trans
             >;
         };
 
         Context_8_Layer {
             bindings = <
-&trans  &to 0      &to 1      &to 2               &to 3   &to 4             &to 5   &to 6   &to 7   &to 8   &none   &trans
-&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &to 0      &to 1      &to 2               &to 3   &to 4     &to 5   &to 6   &to 7   &to 8   &none   &trans
+&trans  &kp RA(L)  &kp RA(O)  &kp RA(E)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(A)  &kp RA(S)  &mmt (LCTRL) RA(N)  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp RA(Z)  &kp RA(X)  &kp RA(C)           &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans              &trans  &trans    &trans  &trans
+                                                  &trans  &trans    &trans
             >;
         };
 
         Quick_Layer_0 {
             bindings = <
-&trans  &trans  &trans     &trans    &trans         &trans              &trans  &path_w_sand        &trans  &trans  &trans  &trans
-&trans  &zip_c  &trans     &trans    &trans         &trans              &trans  &path_lap_projects  &trans  &trans  &trans  &trans
-&trans  &ad     &un        &kp TAB   &trans         &trans              &trans  &trans              &trans  &trans  &trans  &trans
-&trans  &id     &passport  &email_h  &email_h_spam  &email_w            &trans  &trans              &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &trans  &trans     &trans    &trans         &trans      &trans  &path_w_sand        &trans  &trans  &trans  &trans
+&trans  &zip_c  &trans     &trans    &trans         &trans      &trans  &path_lap_projects  &trans  &trans  &trans  &trans
+&trans  &ad     &un        &kp TAB   &trans         &trans      &trans  &trans              &trans  &trans  &trans  &trans
+&trans  &id     &passport  &email_h  &email_h_spam  &email_w    &trans  &trans              &trans  &trans  &trans  &trans
+                           &trans    &trans         &trans      &trans  &trans
+                                     &trans         &trans      &trans
             >;
         };
 
         Quick_Layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans             &trans  &trans                      &trans          &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans             &trans  &trans                      &trans          &trans  &trans  &trans     &trans  &trans
-&trans  &trans  &trans  &trans             &trans  &linux_git_track            &linux_hdfs_ls  &trans  &trans  &linux_ls  &trans  &trans
-&trans  &trans  &trans  &linux_git_commit  &trans  &trans                      &linux_nvidia   &trans  &trans  &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &trans  &trans  &trans             &trans  &trans              &trans          &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans             &trans  &trans              &trans          &trans  &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans             &trans  &linux_git_track    &linux_hdfs_ls  &trans  &trans  &linux_ls  &trans  &trans
+&trans  &trans  &trans  &linux_git_commit  &trans  &trans              &linux_nvidia   &trans  &trans  &trans     &trans  &trans
+                        &trans             &trans  &trans              &trans          &trans
+                                           &trans  &trans              &trans
             >;
         };
 
