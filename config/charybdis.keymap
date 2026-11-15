@@ -10,6 +10,51 @@
     quick-tap-ms = <150>;
 };
 
+
+/ {
+    behaviors {
+        mmt: mmt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            global-quick-tap;
+            bindings = <&kp>, <&kp>;
+        };
+
+        skl: skl {
+            compatible = "zmk,behavior-sticky-key";
+            label = "skl";
+            #binding-cells = <1>;
+            bindings = <&mo>;
+            release-after-ms = <1000>;
+            quick-release;
+            ignore-modifiers;
+        };
+
+        skm: sticky_modif {
+            compatible = "zmk,behavior-sticky-key";
+            #binding-cells = <1>;
+            bindings = <&kp>;
+            release-after-ms = <1000>;
+            quick-release;
+        };
+
+        // Define your custom delayed layer-tap behavior
+
+        lt_delay: layer_tap_delay {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";         // Enforces the time lag
+            tapping-term-ms = <300>;           // Your time lag duration (e.g., 300ms)
+            bindings = <&mo>, <&kp>;
+
+            // Hold triggers momentary layer, tap triggers keypress
+        };
+    };
+};
+
 / {
     macros {
         To1_macro: To1_macro {
