@@ -830,28 +830,3 @@
         };
     };
 };
-
-
-
-&trackball_peripheral_listener {
-    // Domyślnie: ruch kursora z normalną prędkością (1:1)
-
-    input-processors = <&zip_xy_scaler 1 1>;
-
-    // Warstwa: precyzyjny ruch kursora (1/3 prędkości)
-
-    precision {
-        layers = <12>;
-        input-processors = <&zip_xy_scaler 1 3>;
-    };
-
-    // Warstwa: przewijanie
-
-    scroller {
-        layers = <13>;
-        input-processors =
-            <&zip_xy_scaler 1 7>,
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_transform INPUT_TRANSFORM_Y_INVERT>;
-    };
-};
