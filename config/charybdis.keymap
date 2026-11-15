@@ -101,7 +101,7 @@
         sign_percent {
             timeout-ms = <SIGN_COMBOS_DELAY>;
             bindings = <&kp PERCENT>;
-            key-positions = <21 22>;
+            key-positions = <21 20>;
             layers = <SIGN_COMBOS_LAYERS>;
         };
 
@@ -282,7 +282,7 @@
         select_world_whole {
             timeout-ms = <SELECT_COMBOS_DELAY>;
             bindings = <&select_word>;
-            key-positions = <52 50>;
+            key-positions = <40 38>;
             layers = <SELECT_COMBOS_LAYERS>;
         };
 
