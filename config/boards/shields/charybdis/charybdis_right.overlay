@@ -1,3 +1,4 @@
+#include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <dt-bindings/zmk/pointing.h>
 #include "charybdis.dtsi"
