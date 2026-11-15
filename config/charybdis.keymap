@@ -146,9 +146,6 @@
             layers = <SIGN_COMBOS_LAYERS>;
         };
 
-
-
-
         sign_hash {
             timeout-ms = <SIGN_COMBOS_DELAY>;
             bindings = <&kp HASH>;
@@ -162,7 +159,6 @@
             key-positions = <46 45>;
             layers = <SIGN_COMBOS_LAYERS>;
         };
-
 
         sign_l_brace {
             timeout-ms = <SIGN_COMBOS_DELAY>;
@@ -191,9 +187,6 @@
             key-positions = <29 28>;
             layers = <SIGN_COMBOS_LAYERS>;
         };
-
-
-
 
         mouse_scroll_down {
             timeout-ms = <SIGN_COMBOS_DELAY>;
@@ -580,10 +573,10 @@
 
         Base_context_0_Layer {
             bindings = <
-&kp GRAVE          &kp SEMI         &kp LEFT_BRACKET  &kp QUESTION         &kp RIGHT_BRACKET      &kp EXCL                &kp EQUAL           &kp LEFT_PARENTHESIS  &kp UNDER             &kp RIGHT_PARENTHESIS  &kp COLON         &kp TILDE
-&kp TAB            &kp Q            &kp W             &kp E                &mmt LEFT_GUI R        &kp T                   &kp Y               &mmt RIGHT_GUI U      &kp I                 &kp O                  &kp P             &kp BSLH
-&bookmark          &lt_delay 12 A   &lt 4 S           &mmt LEFT_CONTROL D  &lt_delay 13 F         &kp G                   &kp H               &kp J                 &mmt RIGHT_CONTROL K  &kp L                  &skm RIGHT_SHIFT  &kp SQT
-&bookmark_chapter  &mmt LEFT_ALT Z  &kp X             &kp C                &kp V                  &lt 2 B                 &kp N               &kp M                 &kp COMMA             &kp DOT                &kp LEFT_ALT      &kp RIGHT_SHIFT
+&kp GRAVE          &kp SEMI         &kp LEFT_BRACKET  &kp QUESTION         &kp RIGHT_BRACKET      &kp EXCL                &kp EQUAL           &kp LEFT_PARENTHESIS  &kp UNDER             &kp RIGHT_PARENTHESIS  &kp COLON         &sign_tilda
+&kp TAB            &kp Q            &kp W             &kp E                &mmt LEFT_GUI R        &kp T                   &kp Y               &mmt RIGHT_GUI U      &kp I                 &kp O                  &kp P             &none
+&bookmark          &lt_delay 12 A   &lt 4 S           &mmt LEFT_CONTROL D  &lt_delay 13 F         &kp G                   &kp H               &kp J                 &mmt RIGHT_CONTROL K  &kp L                  &skm RIGHT_SHIFT  &none
+&bookmark_chapter  &mmt LEFT_ALT Z  &kp X             &kp C                &kp V                  &lt 2 B                 &kp N               &kp M                 &kp COMMA             &kp DOT                &kp LEFT_ALT      &none
                                                       &kp LEFT_CONTROL     &lt (9) RC(RA(SPACE))  &lt (23) RC(RA(TAB))    &lt (11) LS(LG(S))  &sl 14
                                                                            &kp LS(ENTER)          &lt 10 C_MUTE           &kp CAPSLOCK
             >;
@@ -716,7 +709,7 @@
 &trans  &kp LS(Q)   &kp LS(W)   &kp LS(E)           &kp LS(R)   &kp LS(T)     &kp LS(Y)       &kp LS(U)   &kp LS(I)      &kp LS(O)    &kp LS(P)   &trans
 &trans  &kp LS(A)   &kp LS(S)   &mmt (LCTRL) LS(D)  &kp LS(F)   &kp LS(G)     &kp LS(H)       &kp LS(J)   &kp LS(K)      &kp LS(L)    &trans      &trans
 &trans  &kp LS(Z)   &kp LS(X)   &kp LS(C)           &kp LS(V)   &kp LS(B)     &kp LS(N)       &kp LS(M)   &kp LS(COMMA)  &kp LS(DOT)  &trans      &trans
-                                &czesc              &trans      &trans        &sign_less_eq   &sign_eq
+                                &none               &czesc      &trans        &sign_less_eq   &sign_eq
                                                     &smile      &trans        &sign_great_eq
             >;
         };
