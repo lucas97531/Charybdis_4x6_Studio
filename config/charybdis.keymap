@@ -279,10 +279,10 @@
             layers = <SELECT_COMBOS_LAYERS>;
         };
 
-        quick_layer_sl_0 {
+        quick_layer_sl_1 {
             timeout-ms = <40>;
             bindings = <&sl 24>;
-            key-positions = <40 38>;
+            key-positions = <40 39>;
             layers = <0 1 2 3 4 5 6 7 8>;
         };
     };
