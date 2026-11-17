@@ -56,6 +56,15 @@
 
             // Hold triggers momentary layer, tap triggers keypress
         };
+
+        my_lt_rclk: my_lt_rclk {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred"; // or "balanced" / "hold-preferred"
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            bindings = <&mo>, <&mkp>;
+        };
     };
 };
 
@@ -584,8 +593,8 @@
 &kp TAB            &kp Q             &kp W             &kp E                &mmt LEFT_GUI R    &kp T                     &kp Y               &mmt RIGHT_GUI U      &kp I                 &kp O                  &kp P             &kp LA(LS(C))
 &bookmark          &mmt LEFT_SHIFT A &lt_delay 12 S    &mmt LEFT_CONTROL D  &lt_delay 13 F     &kp G                     &kp H               &kp J                 &mmt RIGHT_CONTROL K  &kp L                  &skm RIGHT_SHIFT  &kp LC(LS(O))
 &bookmark_chapter  &mmt LEFT_ALT Z   &kp X             &kp C                &kp V              &lt 2 B                   &kp N               &kp M                 &kp COMMA             &kp DOT                &kp LEFT_ALT      &no_sleep
-                                                       &mkp LCLK            &lt 9 SPACE        &mkp RCLK                 &lt 10 LG(LS(S))    &sl 14
-                                                                            &kp LS(ENTER)      &lt 23 C_MUTE             &kp CAPSLOCK
+                                                       &mkp LCLK            &lt 9 SPACE        &my_lt_rclk 23 RCLK       &lt 10 LG(LS(S))    &sl 14
+                                                                            &kp LS(ENTER)      &kp C_MUTE                &kp CAPSLOCK
             >;
         };
 
